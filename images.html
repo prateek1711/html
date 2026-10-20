@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #414141;
+        }
+    </style>
+            
+</head>
+<body>
+    <img src="./flight2.png" width="100px"
+    height="100px" alt="no image">
+    <picture>
+        <source  media="(min-width: 650px)" srcset="./flight2.png"/>
+        <source  media="(min-width: 
+        460px)" srcset="./flight2.png"/>
+
+        <img src="./flight2.png"
+        width="100px" alt="no image"/>
+
+    </picture>
+
+
+    <!-- an image map generates -->
+
+    <img src="flight.png" width="100px" usemap="#image-map">
+
+<map name="image-map">
+    <area  onclick="one()" alt="" title="" href="" coords="211,323,74,398" shape="rect">
+    <area target="" alt="" title="" href="" coords="" shape="rect">
+    <area target="" alt="" title="" href="" coords="" shape="0">
+</map>
+
+
+<script>
+    function one(){
+        alert("you clicked on one")
+    }
+    function two(){
+        alert("you clicked on two")
+    }
+
+</script>
+    
+    
+
+</body>
+</html>
